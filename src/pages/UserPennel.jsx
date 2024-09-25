@@ -11,19 +11,24 @@ const UserPennel = () => {
   
   return (
     <>
-      <div className="flex items-center min-w-full bg-gray-800 justify-between py-2 px-12 ">
-        <button
-          className="lg:hidden text-3xl  text-white p-2 rounded"
+      <div className="flex min-w-full h-[70px] bg-gray-800 items-center justify-between py-2 px-2 ">
+        {isOpen ?
+         <button
+          className="lg:hidden  text-3xl  text-white  rounded"
           onClick={() => setIsOpen(!isOpen)}
         >
-          ☰
-        </button>
-        <h1 className='text-white text-sm sm:text-xl text-nowrap'>
+          x
+        </button>  : <button
+          className="lg:hidden  text-3xl  text-white  rounded"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          ☰</button>}
+        <h1 className=' text-white text-xl sm:text-xl text-nowrap'>
           Tender Managment
         </h1>
         <div className="flex space-x-2">
-          <h4 className="mx-6 my-3 text-white self-end text-nowrap">
-           Wellcome {user?.name}
+          <h4 className="mx-6 text-white self-end text-nowrap">
+            Wellcome {user?.name}
           </h4>
          
         </div>
