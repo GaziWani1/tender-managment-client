@@ -203,9 +203,9 @@ const AvailableTender = () => {
             title={`Loswest bid of ${selectedTender?.tenderName}`}
           >
             {lowestBid ? <>
-              <p>Bid Cost{lowestBid?.bidCost}</p>
-              <p>Company Name{lowestBid?.companyName}</p>
-              <p>Bid Date {new Date(lowestBid?.bidTime).toLocaleString()}</p>
+              <p>Bid Cost : {lowestBid?.bidCost}</p>
+              <p>Company Name : {lowestBid?.companyName}</p>
+              <p>Bid Date : {new Date(lowestBid?.bidTime).toLocaleString()}</p>
               </> : <p className='text-center'>
               -
             </p>
