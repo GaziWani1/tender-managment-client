@@ -1,1 +1,1 @@
-export const serverUrl = 'https://tender-management-server.onrender.com/api/v1'
+export const serverUrl = 'http://localhost:8000/api/v1'

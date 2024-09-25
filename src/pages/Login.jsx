@@ -49,11 +49,11 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-5 sm:p-0">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-2 sm:p-0">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
         <h2 className="text-center text-3xl font-bold text-gray-900">Login</h2>
         <p className="text-center text-sm">
-          Wellome to Tender Managment(assesment)
+         Tender Managment(assesment)
         </p>
         <form onSubmit={handleSubmit} className="space-y-6">
           {errMsg && (
