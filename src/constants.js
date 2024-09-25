@@ -1,0 +1,1 @@
+export const serverUrl = 'https://tender-management-server.onrender.com/api/v1'
